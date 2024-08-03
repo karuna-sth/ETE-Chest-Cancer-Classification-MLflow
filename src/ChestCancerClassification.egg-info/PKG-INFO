@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ChestCancerClassification
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/karuna-sth/Chest-Cancer-Classification
+Author: karuna-sth
+Author-email: karuna.sth01@gmail.com
+Project-URL: Bug Tracker, https://github.com/karuna-sth/Chest-Cancer-Classification/issues
+
+# End To End Chest Cancer Classification with Mlflow, Dvc, docker

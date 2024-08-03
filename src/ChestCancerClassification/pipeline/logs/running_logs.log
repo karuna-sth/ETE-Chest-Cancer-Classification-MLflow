@@ -1,0 +1,22 @@
+[2024-08-03 22:14:15,247: INFO: stage_01_data_ingestion: Data Ingestion Stage started]
+[2024-08-03 22:14:15,247: ERROR: stage_01_data_ingestion: [Errno 2] No such file or directory: 'config/config.yaml']
+Traceback (most recent call last):
+  File "/home/srak/Documents/pers/end-to-end-chest-cancer/src/ChestCancerClassification/pipeline/stage_01_data_ingestion.py", line 28, in <module>
+    obj.main()
+  File "/home/srak/Documents/pers/end-to-end-chest-cancer/src/ChestCancerClassification/pipeline/stage_01_data_ingestion.py", line 21, in main
+    raise ex
+  File "/home/srak/Documents/pers/end-to-end-chest-cancer/src/ChestCancerClassification/pipeline/stage_01_data_ingestion.py", line 15, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/srak/Documents/pers/end-to-end-chest-cancer/src/ChestCancerClassification/config/configuration.py", line 11, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/srak/miniconda3/envs/chest/lib/python3.11/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/srak/Documents/pers/end-to-end-chest-cancer/src/ChestCancerClassification/utils/common.py", line 39, in read_yaml
+    raise ex
+  File "/home/srak/Documents/pers/end-to-end-chest-cancer/src/ChestCancerClassification/utils/common.py", line 32, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+         ^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config/config.yaml'
